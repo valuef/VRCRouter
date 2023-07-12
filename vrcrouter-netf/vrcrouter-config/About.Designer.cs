@@ -25,7 +25,6 @@
     private void InitializeComponent() {
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
       this.label6 = new System.Windows.Forms.Label();
-      this.label5 = new System.Windows.Forms.Label();
       this.version = new System.Windows.Forms.Label();
       this.built = new System.Windows.Forms.Label();
       this.label2 = new System.Windows.Forms.Label();
@@ -34,28 +33,17 @@
       this.label3 = new System.Windows.Forms.Label();
       this.label1 = new System.Windows.Forms.Label();
       this.textBox1 = new System.Windows.Forms.TextBox();
+      this.linkLabel2 = new System.Windows.Forms.LinkLabel();
       this.SuspendLayout();
       // 
       // label6
       // 
       this.label6.AutoSize = true;
-      this.label6.Location = new System.Drawing.Point(188, 300);
+      this.label6.Location = new System.Drawing.Point(195, 9);
       this.label6.Name = "label6";
-      this.label6.Size = new System.Drawing.Size(467, 30);
+      this.label6.Size = new System.Drawing.Size(267, 15);
       this.label6.TabIndex = 18;
-      this.label6.Text = "Copyright (c) 2023 ValueFactory https://value.gay\r\nIf you have received this soft" +
-    "ware for free, please purchase it at https://boop.shader.gay";
-      // 
-      // label5
-      // 
-      this.label5.AutoSize = true;
-      this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label5.Location = new System.Drawing.Point(189, 9);
-      this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-      this.label5.Name = "label5";
-      this.label5.Size = new System.Drawing.Size(523, 210);
-      this.label5.TabIndex = 17;
-      this.label5.Text = resources.GetString("label5.Text");
+      this.label6.Text = "Copyright (c) 2023 ValueFactory https://value.gay";
       // 
       // version
       // 
@@ -121,7 +109,7 @@
       this.label3.Location = new System.Drawing.Point(10, 118);
       this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
       this.label3.Name = "label3";
-      this.label3.Size = new System.Drawing.Size(171, 240);
+      this.label3.Size = new System.Drawing.Size(171, 180);
       this.label3.TabIndex = 11;
       this.label3.Text = resources.GetString("label3.Text");
       // 
@@ -138,23 +126,36 @@
       // 
       // textBox1
       // 
-      this.textBox1.Location = new System.Drawing.Point(12, 345);
+      this.textBox1.Location = new System.Drawing.Point(198, 56);
       this.textBox1.Multiline = true;
       this.textBox1.Name = "textBox1";
       this.textBox1.ReadOnly = true;
       this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-      this.textBox1.Size = new System.Drawing.Size(700, 136);
+      this.textBox1.Size = new System.Drawing.Size(290, 274);
       this.textBox1.TabIndex = 19;
       this.textBox1.Text = resources.GetString("textBox1.Text");
+      // 
+      // linkLabel2
+      // 
+      this.linkLabel2.AutoSize = true;
+      this.linkLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.linkLabel2.Location = new System.Drawing.Point(195, 29);
+      this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+      this.linkLabel2.Name = "linkLabel2";
+      this.linkLabel2.Size = new System.Drawing.Size(208, 15);
+      this.linkLabel2.TabIndex = 20;
+      this.linkLabel2.TabStop = true;
+      this.linkLabel2.Text = "https://github.com/valuef/VRCRouter";
+      this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
       // 
       // About
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(720, 493);
+      this.ClientSize = new System.Drawing.Size(506, 344);
+      this.Controls.Add(this.linkLabel2);
       this.Controls.Add(this.textBox1);
       this.Controls.Add(this.label6);
-      this.Controls.Add(this.label5);
       this.Controls.Add(this.version);
       this.Controls.Add(this.built);
       this.Controls.Add(this.label2);
@@ -178,7 +179,6 @@
     #endregion
 
     private System.Windows.Forms.Label label6;
-    private System.Windows.Forms.Label label5;
     private System.Windows.Forms.Label version;
     private System.Windows.Forms.Label built;
     private System.Windows.Forms.Label label2;
@@ -187,5 +187,6 @@
     private System.Windows.Forms.Label label3;
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.TextBox textBox1;
+    private System.Windows.Forms.LinkLabel linkLabel2;
   }
 }

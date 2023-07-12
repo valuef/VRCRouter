@@ -117,28 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Terms of Use
-
-YOU CAN:
-  * Use the product on private/public avatars without credit.
-  * Make edits to the product and share them with other persons who have purchased the product.
-
-YOU CANNOT: 
-  * Redistribute this product to persons who do not own it.
-  * Use this product commercially (i.e as part of another product)
-  * Sell this product or derivations of it.
-  * Claim that you have made this product.
-
-If there's anything unclear about the terms, please contact me:
-  https://shader.gay
-</value>
-  </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>* Presets
-  * Mocha @WelshAnomaly
-
-* Pre-release testing, assistance
+    <value>* Pre-release testing, assistance
   * Mocha @WelshAnomaly
 
 * Beta testing
@@ -147,10 +127,9 @@ If there's anything unclear about the terms, please contact me:
   * Serim @Serim2510
   * Silver @SilverSoulComic
   * Neo @DragunNeo
+
 * Icon art
   * Akeloes @Akeloes
-
-
 </value>
   </data>
   <data name="textBox1.Text" xml:space="preserve">

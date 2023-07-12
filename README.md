@@ -1,5 +1,5 @@
 # VRCRouter
-Lightweight and configurable OSC router for VRChat.
+Lightweight and configurable OSC router for VRChat PCVR.
 
 ## Features
 * Configuration interface.

@@ -24,5 +24,9 @@ namespace ValueFactoryVRCRouterConfig {
     private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
       Process.Start(new ProcessStartInfo() { FileName = "https://shader.gay", UseShellExecute = true });
     }
+
+    private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+      Process.Start(new ProcessStartInfo() { FileName = "https://github.com/valuef/VRCRouter", UseShellExecute = true });
+    }
   }
 }
