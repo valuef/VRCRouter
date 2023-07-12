@@ -1,0 +1,17 @@
+{
+	"source" : "builtin",
+
+	"applications": [{
+		"app_key": "valuefactory.lvrcoscr",
+		"launch_type": "binary",
+		"binary_path_windows": "VRCRouter.exe",
+		"is_dashboard_overlay": true,
+
+		"strings": {
+			"en_us": {
+				"name": "VRCRouter",
+				"description": "A Light VRC OSC Router."
+			}
+		}
+	}]
+}

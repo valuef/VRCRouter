@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vrcrouter", "vrcrouter\vrcrouter.csproj", "{A2D5B458-7E52-40B5-BBA5-555B7B37A4F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vrcrouter-common", "vrcrouter-common\vrcrouter-common.csproj", "{627A06C1-0CD0-40A5-B3AE-1E86EB8EC9F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vrcrouter-config", "vrcrouter-config\vrcrouter-config.csproj", "{4021D161-F4A3-462B-B6B3-0A6CD87728EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2D5B458-7E52-40B5-BBA5-555B7B37A4F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D5B458-7E52-40B5-BBA5-555B7B37A4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2D5B458-7E52-40B5-BBA5-555B7B37A4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2D5B458-7E52-40B5-BBA5-555B7B37A4F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{627A06C1-0CD0-40A5-B3AE-1E86EB8EC9F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{627A06C1-0CD0-40A5-B3AE-1E86EB8EC9F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{627A06C1-0CD0-40A5-B3AE-1E86EB8EC9F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{627A06C1-0CD0-40A5-B3AE-1E86EB8EC9F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4021D161-F4A3-462B-B6B3-0A6CD87728EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4021D161-F4A3-462B-B6B3-0A6CD87728EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4021D161-F4A3-462B-B6B3-0A6CD87728EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4021D161-F4A3-462B-B6B3-0A6CD87728EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F1BCE59-4B55-44F3-9A46-F124C61BF79C}
+	EndGlobalSection
+EndGlobal
