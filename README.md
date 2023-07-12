@@ -8,15 +8,16 @@ Lightweight and configurable OSC router for VRChat PCVR.
 * OSC Message routing from VRChat to specified address:port.
 * Application autostarting and autoclosing.
 
+## Download
+[Download from the Releases page](https://github.com/valuef/VRCRouter/releases/)
+
 ## Usage Tutorial
 https://www.youtube.com/watch?v=8abMvrzguo4
 
 ## Issues/Merges
-I don't check GitHub so poke me on other socials in case you've opened a ticket:
-  https://shader.gay
+I don't check GitHub so poke me on [other socials](https://shader.gay) in case you've opened a ticket.
 
 ## Building release
-
 Run the compile-release-all-netf.sh script on cygwin.
 Msbuild path is hard-coded into the script.
 Clang must be accessible on the PATH.
