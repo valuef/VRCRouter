@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vrcrouter-common", "vrcrout
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vrcrouter-config", "vrcrouter-config\vrcrouter-config.csproj", "{4021D161-F4A3-462B-B6B3-0A6CD87728EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vrcrouter-ui", "vrcrouter-ui\vrcrouter-ui.csproj", "{E96E237B-01EF-484A-9DA5-F9A6A463CBCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4021D161-F4A3-462B-B6B3-0A6CD87728EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4021D161-F4A3-462B-B6B3-0A6CD87728EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4021D161-F4A3-462B-B6B3-0A6CD87728EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E96E237B-01EF-484A-9DA5-F9A6A463CBCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96E237B-01EF-484A-9DA5-F9A6A463CBCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96E237B-01EF-484A-9DA5-F9A6A463CBCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96E237B-01EF-484A-9DA5-F9A6A463CBCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
