@@ -1,0 +1,133 @@
+All of the configuration of the VRCRouter is done through the configuration app.
+
+-----------------------------------------------------------------------------------------------
+--- Requirements (look here if launching the executables does nothing or spews out errors!) ---
+-----------------------------------------------------------------------------------------------
+* MSVC 2022 Redistributables 
+  https://aka.ms/vs/17/release/vc_redist.x64.exe
+
+* .NET Framework 4.8.1 Runtime 
+  https://dotnet.microsoft.com/en-us/download/dotnet-framework/net481
+
+* OSC Enabled in VRChat:
+  Radial Menu -> Optons -> OSC -> Enabled
+
+I also recommend running each of the executables, making sure that your antivirus isn't stopping
+them from running and disabling the popup that asks if you're sure you want to launch this
+application as all of these may intefere with the VRCRouter autostart functionality.
+
+--------------------------
+--- SteamVR Autolaunch ---
+--------------------------
+VRCRouter is able to automatically launch when SteamVR is launched. Once you launch the VRCRouter
+configuration for the first time, you'll be asked if you want to set this up.
+
+If you want to enable/disable SteamVR autolaunch, you can do it at any time by choosing one of the
+Enable/Disable options in the SteamVR section.
+
+----------------
+-- OSC Input ---
+----------------
+The OSC input receive address and port determine where the OSC data will be coming from. For VRChat,
+this is going to be 127.0.0.1:9001. You usually do not want to change this unless you have an odd
+set up and know what you're doing!
+
+---------------------
+-- Wait for VRChat --
+---------------------
+This option will wait for the 'VRChat.exe' process to start before launching any of the autostart
+apps and doing routing.
+
+--------------------------
+--- Setting up a Route ---
+--------------------------
+To create a new route:
+  * Click the 'New Route' button at the bottom of the configuration app.
+  * Select a name that hasn't already been taken by another route and click create.
+  * Configure the output port to match the port that your routed app will be using.
+    If that address:port is already in use by another app, a warning will appear.
+
+  * You may optionally set up an app to automatically start in the 'Autostart App' section.
+    I recommend placing the app in a subdirectory of the VRCRouter folder, preferrably in the routes
+    folder, clicking 'Browse' and finding the executable app. This way, the path to the executable
+    will be relative and you'll be able to move the VRCRouter folder around your file system easily
+    without breaking things.
+
+    You may also specify launch arguments to launch the app with. We have some special formatting
+    that you can use:
+      Any occurance of {output-address} will be replaced with the output address of the route.
+      Any occurange of {output-port} will be replaced wit hthe output address of the route.
+
+      Example:
+        A route with output address "127.0.0.1", an output port of "9020" and autostart arguments of
+        "--osc=9000:{output-address}:{output-port}" will have the arguments formatted into:
+          "--osc=9000:127.0.0.1:9020"
+
+    We will try to automatically close the autostarted app and any children processes once the
+    router closes. This may not always succeed however. If it doesn't please try to set up a manual
+    autoclose using the 'Autoclose App' section.
+
+  * You may optionally specify an executable name to close when the router closes in the 'Autoclose
+    App' section.
+    You only need to specify the filename of the executable. For example: "VRCFaceTracking.exe"
+
+    Any apps that have that executable name, and their children processes, will be closed when the
+    router is closed. The app doesn't have to have been started using the autostart.
+    
+    Beware that you do not necessarily need to use this to close autostarted apps. This is only
+    intended to close apps that work a bit oddly, such as the VRC Face Tracking 5.0 app.
+
+A route may be enabled or disabled. Disabled routes do not do routing, do not launch apps and do not
+close apps. They are completely dormant and do nothing.
+
+Disabling OSC routing will disable sending OSC data to the selected address and port.
+
+You can leave the exectuable path of the autostart app empty and no app will be started.
+
+You can leave the exectuable path of the autoclose app empty and no app will be closed.
+
+---------------------
+--- Example Route ---
+---------------------
+Here are the steps I take to set up a route for the VF boop counter (https://boop.shader.gay)
+1. Create a new route called 'Boop Counter'
+2. Set the output port to 9002
+3. Move the 'Boop Counter' folder into the 'VRCRouter/routes' folder
+4. Click 'Browse' on the Executable Path field of the route.
+5. Select the 'Boop Counter.exe' executable. The 'Executable Path' field now looks like this:
+  routes\Boop Counter\Boop Counter.exe
+6. Put the following into the Launch Arguments field:
+  --osc_receive={output-address}:{output-port}
+
+  The boop counter is designed to understand these arguments, they may not work for other OSC apps!
+
+That's it! You may test the autolaunch by clicking the 'Launch' button. If everything is working
+fine, the boop counter will start.
+
+------------------------
+--- Using the router ---
+------------------------
+
+You may manually launch the VRCRouter executable, or if you have SteamVR autostart enabled, it will
+launch by itself once SteamVR starts. The router will automatically close once SteamVR is exiting
+and will close any autostarted and autoclose apps with it.
+
+---------------
+-- In VRChat --
+---------------
+
+Once in VRChat, you'll want to enable OSC. Open your radial menu and find:
+  Optons -> OSC -> Enabled
+
+You may need to restart VRChat for data to properly be sent from OSC apps to VRChat.
+
+-----------------
+--- Tutorials ---
+-----------------
+
+https://www.youtube.com/watch?v=1v8vxQEpF8w - Router Setup 
+https://www.youtube.com/watch?v=kyXLpmeJouQ - Full Setup (Boop Counter)
+
+------------------------------------------
+by ValueFactory https://value.gay
+Initially for https://boop.shader.gay
