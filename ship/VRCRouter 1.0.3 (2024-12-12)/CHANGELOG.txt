@@ -1,0 +1,4 @@
+## Version 1.0.3 (2024-04-12)
+* Added a route preset for VRCFaceTracking 5.2.3.0
+* Updated the notes for VRCFaceTracking preset usage.
+

@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "receive_address": "127.0.0.1",
+  "receive_port": 9001,
+  "wait_for_vrchat": true,
+  "config_first_launch": false
+}
